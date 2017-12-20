@@ -377,3 +377,285 @@ Please make sure you have the correct access rights
  DEBUG [8a33de4e] Running [ ! -e .env ] as MokgosiL@localhost
  DEBUG [8a33de4e] Command: [ ! -e .env ]
  DEBUG [8a33de4e] Finished in 0.906 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-20 10:54:02 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d343f4d6] Running /usr/bin/env mkdir -p /tmp as dev@191.166.29.176
+ DEBUG [d343f4d6] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d343f4d6] Finished in 2.030 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-my_app_name-production-MokgosiL.sh 0.0%
+  INFO Uploading /tmp/git-ssh-my_app_name-production-MokgosiL.sh 100.0%
+  INFO [9af3a596] Running /usr/bin/env chmod 700 /tmp/git-ssh-my_app_name-production-MokgosiL.sh as dev@191.166.29.176
+ DEBUG [9af3a596] Command: /usr/bin/env chmod 700 /tmp/git-ssh-my_app_name-production-MokgosiL.sh
+  INFO [9af3a596] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [dddb2202] Running /usr/bin/env git ls-remote https://github.com/mokgosi/badger.git HEAD as dev@191.166.29.176
+ DEBUG [dddb2202] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-MokgosiL.sh" ; /usr/bin/env git ls-remote https://github.com/mokgosi/badger.git HEAD )
+ DEBUG [dddb2202] 	6a2085dbf85cdcc57ee55070d91687738405de6b	HEAD
+  INFO [dddb2202] Finished in 1.416 seconds with exit status 0 (successful).
+  INFO [3c2f5aeb] Running /usr/bin/env mkdir -p /var/www/login/shared /var/www/login/releases as dev@191.166.29.176
+ DEBUG [3c2f5aeb] Command: /usr/bin/env mkdir -p /var/www/login/shared /var/www/login/releases
+  INFO [3c2f5aeb] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [f6ec66a0] Running /usr/bin/env mkdir -p /var/www/login/shared/storage/app /var/www/login/shared/storage/framework/cache /var/www/login/shared/storage/framework/sessions /var/www/login/shared/storage/framework/views /var/www/login/shared/storage/logs as dev@191.166.29.176
+ DEBUG [f6ec66a0] Command: /usr/bin/env mkdir -p /var/www/login/shared/storage/app /var/www/login/shared/storage/framework/cache /var/www/login/shared/storage/framework/sessions /var/www/login/shared/storage/framework/views /var/www/login/shared/storage/logs
+  INFO [f6ec66a0] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [bcc99c5e] Running [ -f /var/www/login/current/REVISION ] as dev@191.166.29.176
+ DEBUG [bcc99c5e] Command: [ -f /var/www/login/current/REVISION ]
+ DEBUG [bcc99c5e] Finished in 0.057 seconds with exit status 1 (failed).
+ DEBUG [69d043a4] Running if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [69d043a4] Command: if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi
+ DEBUG [69d043a4] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [979405a0] Running /usr/bin/env mkdir -p storage/app as dev@191.166.29.176
+ DEBUG [979405a0] Command: cd /var/www/login/shared && /usr/bin/env mkdir -p storage/app
+  INFO [979405a0] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [99ef5d96] Running if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [99ef5d96] Command: if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi
+ DEBUG [99ef5d96] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [09c45e3a] Running /usr/bin/env mkdir -p storage/framework/cache as dev@191.166.29.176
+ DEBUG [09c45e3a] Command: cd /var/www/login/shared && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [09c45e3a] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [f98775d6] Running if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [f98775d6] Command: if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi
+ DEBUG [f98775d6] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [9b15f179] Running /usr/bin/env mkdir -p storage/framework/sessions as dev@191.166.29.176
+ DEBUG [9b15f179] Command: cd /var/www/login/shared && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [9b15f179] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [093ad131] Running if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [093ad131] Command: if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi
+ DEBUG [093ad131] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [4404aa2d] Running /usr/bin/env mkdir -p storage/framework/views as dev@191.166.29.176
+ DEBUG [4404aa2d] Command: cd /var/www/login/shared && /usr/bin/env mkdir -p storage/framework/views
+  INFO [4404aa2d] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [2b205e1b] Running if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [2b205e1b] Command: if test ! -d /var/www/login/shared; then echo "Directory does not exist '/var/www/login/shared'" 1>&2; false; fi
+ DEBUG [2b205e1b] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [fae0ad42] Running /usr/bin/env mkdir -p storage/logs as dev@191.166.29.176
+ DEBUG [fae0ad42] Command: cd /var/www/login/shared && /usr/bin/env mkdir -p storage/logs
+  INFO [fae0ad42] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [46d09991] Running [ -f /var/www/login/repo/HEAD ] as dev@191.166.29.176
+ DEBUG [46d09991] Command: [ -f /var/www/login/repo/HEAD ]
+ DEBUG [46d09991] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/login/repo
+ DEBUG [ff18c5a5] Running if test ! -d /var/www/login/repo; then echo "Directory does not exist '/var/www/login/repo'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [ff18c5a5] Command: if test ! -d /var/www/login/repo; then echo "Directory does not exist '/var/www/login/repo'" 1>&2; false; fi
+ DEBUG [ff18c5a5] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [a154374a] Running /usr/bin/env git remote set-url origin https://github.com/mokgosi/badger.git as dev@191.166.29.176
+ DEBUG [a154374a] Command: cd /var/www/login/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-MokgosiL.sh" ; /usr/bin/env git remote set-url origin https://github.com/mokgosi/badger.git )
+  INFO [a154374a] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [3799e102] Running /usr/bin/env git remote update --prune as dev@191.166.29.176
+ DEBUG [3799e102] Command: cd /var/www/login/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-MokgosiL.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [3799e102] 	Fetching origin
+ DEBUG [3799e102] 	From https://github.com/mokgosi/badger
+   b0be1e6..6a2085d  master     -> master
+  INFO [3799e102] Finished in 2.553 seconds with exit status 0 (successful).
+ DEBUG [4a5196d3] Running if test ! -d /var/www/login/repo; then echo "Directory does not exist '/var/www/login/repo'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [4a5196d3] Command: if test ! -d /var/www/login/repo; then echo "Directory does not exist '/var/www/login/repo'" 1>&2; false; fi
+ DEBUG [4a5196d3] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [de7252be] Running /usr/bin/env mkdir -p /var/www/login/releases/20171220085407 as dev@191.166.29.176
+ DEBUG [de7252be] Command: cd /var/www/login/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-MokgosiL.sh" ; /usr/bin/env mkdir -p /var/www/login/releases/20171220085407 )
+  INFO [de7252be] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [fb9ab719] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/login/releases/20171220085407 as dev@191.166.29.176
+ DEBUG [fb9ab719] Command: cd /var/www/login/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-MokgosiL.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/login/releases/20171220085407 )
+  INFO [fb9ab719] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [a28302dd] Running if test ! -d /var/www/login/repo; then echo "Directory does not exist '/var/www/login/repo'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [a28302dd] Command: if test ! -d /var/www/login/repo; then echo "Directory does not exist '/var/www/login/repo'" 1>&2; false; fi
+ DEBUG [a28302dd] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [57c1900e] Running /usr/bin/env git rev-list --max-count=1 master as dev@191.166.29.176
+ DEBUG [57c1900e] Command: cd /var/www/login/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-MokgosiL.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [57c1900e] 	6a2085dbf85cdcc57ee55070d91687738405de6b
+ DEBUG [57c1900e] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [ed27814a] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [ed27814a] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [ed27814a] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [53b7954b] Running /usr/bin/env echo "6a2085dbf85cdcc57ee55070d91687738405de6b" >> REVISION as dev@191.166.29.176
+ DEBUG [53b7954b] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env echo "6a2085dbf85cdcc57ee55070d91687738405de6b" >> REVISION
+  INFO [53b7954b] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [92252438] Running /usr/bin/env mkdir -p /var/www/login/releases/20171220085407/storage /var/www/login/releases/20171220085407/storage/framework as dev@191.166.29.176
+ DEBUG [92252438] Command: /usr/bin/env mkdir -p /var/www/login/releases/20171220085407/storage /var/www/login/releases/20171220085407/storage/framework
+  INFO [92252438] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [993a7c96] Running [ -L /var/www/login/releases/20171220085407/storage/app ] as dev@191.166.29.176
+ DEBUG [993a7c96] Command: [ -L /var/www/login/releases/20171220085407/storage/app ]
+ DEBUG [993a7c96] Finished in 0.069 seconds with exit status 1 (failed).
+ DEBUG [67d61ade] Running [ -d /var/www/login/releases/20171220085407/storage/app ] as dev@191.166.29.176
+ DEBUG [67d61ade] Command: [ -d /var/www/login/releases/20171220085407/storage/app ]
+ DEBUG [67d61ade] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [2874d38b] Running /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/app as dev@191.166.29.176
+ DEBUG [2874d38b] Command: /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/app
+  INFO [2874d38b] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [8f276f18] Running /usr/bin/env ln -s /var/www/login/shared/storage/app /var/www/login/releases/20171220085407/storage/app as dev@191.166.29.176
+ DEBUG [8f276f18] Command: /usr/bin/env ln -s /var/www/login/shared/storage/app /var/www/login/releases/20171220085407/storage/app
+  INFO [8f276f18] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [0a103d53] Running [ -L /var/www/login/releases/20171220085407/storage/framework/cache ] as dev@191.166.29.176
+ DEBUG [0a103d53] Command: [ -L /var/www/login/releases/20171220085407/storage/framework/cache ]
+ DEBUG [0a103d53] Finished in 0.069 seconds with exit status 1 (failed).
+ DEBUG [a0d9872f] Running [ -d /var/www/login/releases/20171220085407/storage/framework/cache ] as dev@191.166.29.176
+ DEBUG [a0d9872f] Command: [ -d /var/www/login/releases/20171220085407/storage/framework/cache ]
+ DEBUG [a0d9872f] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [5844e92b] Running /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/framework/cache as dev@191.166.29.176
+ DEBUG [5844e92b] Command: /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/framework/cache
+  INFO [5844e92b] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [c726c876] Running /usr/bin/env ln -s /var/www/login/shared/storage/framework/cache /var/www/login/releases/20171220085407/storage/framework/cache as dev@191.166.29.176
+ DEBUG [c726c876] Command: /usr/bin/env ln -s /var/www/login/shared/storage/framework/cache /var/www/login/releases/20171220085407/storage/framework/cache
+  INFO [c726c876] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [01aeca24] Running [ -L /var/www/login/releases/20171220085407/storage/framework/sessions ] as dev@191.166.29.176
+ DEBUG [01aeca24] Command: [ -L /var/www/login/releases/20171220085407/storage/framework/sessions ]
+ DEBUG [01aeca24] Finished in 0.081 seconds with exit status 1 (failed).
+ DEBUG [eb35db43] Running [ -d /var/www/login/releases/20171220085407/storage/framework/sessions ] as dev@191.166.29.176
+ DEBUG [eb35db43] Command: [ -d /var/www/login/releases/20171220085407/storage/framework/sessions ]
+ DEBUG [eb35db43] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [4273fe5e] Running /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/framework/sessions as dev@191.166.29.176
+ DEBUG [4273fe5e] Command: /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/framework/sessions
+  INFO [4273fe5e] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [0ef93226] Running /usr/bin/env ln -s /var/www/login/shared/storage/framework/sessions /var/www/login/releases/20171220085407/storage/framework/sessions as dev@191.166.29.176
+ DEBUG [0ef93226] Command: /usr/bin/env ln -s /var/www/login/shared/storage/framework/sessions /var/www/login/releases/20171220085407/storage/framework/sessions
+  INFO [0ef93226] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [b111faad] Running [ -L /var/www/login/releases/20171220085407/storage/framework/views ] as dev@191.166.29.176
+ DEBUG [b111faad] Command: [ -L /var/www/login/releases/20171220085407/storage/framework/views ]
+ DEBUG [b111faad] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [81e5cf94] Running [ -d /var/www/login/releases/20171220085407/storage/framework/views ] as dev@191.166.29.176
+ DEBUG [81e5cf94] Command: [ -d /var/www/login/releases/20171220085407/storage/framework/views ]
+ DEBUG [81e5cf94] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [1207f2df] Running /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/framework/views as dev@191.166.29.176
+ DEBUG [1207f2df] Command: /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/framework/views
+  INFO [1207f2df] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [8b546e37] Running /usr/bin/env ln -s /var/www/login/shared/storage/framework/views /var/www/login/releases/20171220085407/storage/framework/views as dev@191.166.29.176
+ DEBUG [8b546e37] Command: /usr/bin/env ln -s /var/www/login/shared/storage/framework/views /var/www/login/releases/20171220085407/storage/framework/views
+  INFO [8b546e37] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [cebd0071] Running [ -L /var/www/login/releases/20171220085407/storage/logs ] as dev@191.166.29.176
+ DEBUG [cebd0071] Command: [ -L /var/www/login/releases/20171220085407/storage/logs ]
+ DEBUG [cebd0071] Finished in 0.084 seconds with exit status 1 (failed).
+ DEBUG [4e908127] Running [ -d /var/www/login/releases/20171220085407/storage/logs ] as dev@191.166.29.176
+ DEBUG [4e908127] Command: [ -d /var/www/login/releases/20171220085407/storage/logs ]
+ DEBUG [4e908127] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [2662d038] Running /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/logs as dev@191.166.29.176
+ DEBUG [2662d038] Command: /usr/bin/env rm -rf /var/www/login/releases/20171220085407/storage/logs
+  INFO [2662d038] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [9e148e50] Running /usr/bin/env ln -s /var/www/login/shared/storage/logs /var/www/login/releases/20171220085407/storage/logs as dev@191.166.29.176
+ DEBUG [9e148e50] Command: /usr/bin/env ln -s /var/www/login/shared/storage/logs /var/www/login/releases/20171220085407/storage/logs
+  INFO [9e148e50] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [a08f50e9] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [a08f50e9] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [a08f50e9] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [6ac181ca] Running /usr/bin/env mkdir -p bootstrap/cache as dev@191.166.29.176
+ DEBUG [6ac181ca] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p bootstrap/cache
+  INFO [6ac181ca] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [0c0c0371] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [0c0c0371] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [0c0c0371] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [163f9107] Running /usr/bin/env mkdir -p storage as dev@191.166.29.176
+ DEBUG [163f9107] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p storage
+  INFO [163f9107] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [ab779382] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [ab779382] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [ab779382] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [fa13ae1b] Running /usr/bin/env mkdir -p storage/app as dev@191.166.29.176
+ DEBUG [fa13ae1b] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p storage/app
+  INFO [fa13ae1b] Finished in 0.086 seconds with exit status 0 (successful).
+ DEBUG [138fc1ac] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [138fc1ac] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [138fc1ac] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [58cf14a0] Running /usr/bin/env mkdir -p storage/app/public as dev@191.166.29.176
+ DEBUG [58cf14a0] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p storage/app/public
+  INFO [58cf14a0] Finished in 0.062 seconds with exit status 0 (successful).
+ DEBUG [9d134f6e] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [9d134f6e] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [9d134f6e] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [ca1c086b] Running /usr/bin/env mkdir -p storage/framework as dev@191.166.29.176
+ DEBUG [ca1c086b] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p storage/framework
+  INFO [ca1c086b] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [e668c103] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [e668c103] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [e668c103] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [2ea82dac] Running /usr/bin/env mkdir -p storage/framework/cache as dev@191.166.29.176
+ DEBUG [2ea82dac] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [2ea82dac] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [178804cf] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [178804cf] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [178804cf] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [0de4d3c1] Running /usr/bin/env mkdir -p storage/framework/sessions as dev@191.166.29.176
+ DEBUG [0de4d3c1] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [0de4d3c1] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [894174d7] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [894174d7] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [894174d7] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [c745e474] Running /usr/bin/env mkdir -p storage/framework/views as dev@191.166.29.176
+ DEBUG [c745e474] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p storage/framework/views
+  INFO [c745e474] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [d7d1cd5a] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [d7d1cd5a] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [d7d1cd5a] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [741d57c2] Running /usr/bin/env mkdir -p storage/logs as dev@191.166.29.176
+ DEBUG [741d57c2] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env mkdir -p storage/logs
+  INFO [741d57c2] Finished in 0.081 seconds with exit status 0 (successful).
+ DEBUG [0a8651e9] Running [ ! -e .env ] as MokgosiL@localhost
+ DEBUG [0a8651e9] Command: [ ! -e .env ]
+ DEBUG [0a8651e9] Finished in 0.232 seconds with exit status 256 (failed).
+ DEBUG Uploading .env 0.0%
+  INFO Uploading .env 100.0%
+ DEBUG [15dfd3bc] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [15dfd3bc] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [15dfd3bc] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [28435914] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as dev@191.166.29.176
+ DEBUG [28435914] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO [28435914] Finished in 470.032 seconds with exit status 0 (successful).
+ DEBUG [5bb66333] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [5bb66333] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [5bb66333] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [62a392c5] Running /usr/bin/env php artisan storage:link --env=production as dev@191.166.29.176
+ DEBUG [62a392c5] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env php artisan storage:link --env=production
+ DEBUG [62a392c5] 	The [public/storage] directory has been linked.
+  INFO [62a392c5] Finished in 0.406 seconds with exit status 0 (successful).
+ DEBUG [f35ded64] Running if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [f35ded64] Command: if test ! -d /var/www/login/releases/20171220085407; then echo "Directory does not exist '/var/www/login/releases/20171220085407'" 1>&2; false; fi
+ DEBUG [f35ded64] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [55be058b] Running /usr/bin/env php artisan optimize --force --env=production as dev@191.166.29.176
+ DEBUG [55be058b] Command: cd /var/www/login/releases/20171220085407 && /usr/bin/env php artisan optimize --force --env=production
+  INFO [55be058b] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [15fb049e] Running [ -d /var/www/login/releases/20171220085407/bootstrap/cache ] as dev@191.166.29.176
+ DEBUG [15fb049e] Command: [ -d /var/www/login/releases/20171220085407/bootstrap/cache ]
+ DEBUG [15fb049e] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [8236aa41] Running [ -d /var/www/login/releases/20171220085407/storage ] as dev@191.166.29.176
+ DEBUG [8236aa41] Command: [ -d /var/www/login/releases/20171220085407/storage ]
+ DEBUG [8236aa41] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [a75fca32] Running [ -d /var/www/login/shared/storage/app ] as dev@191.166.29.176
+ DEBUG [a75fca32] Command: [ -d /var/www/login/shared/storage/app ]
+ DEBUG [a75fca32] Finished in 0.062 seconds with exit status 0 (successful).
+ DEBUG [fc351c74] Running [ -d /var/www/login/releases/20171220085407/storage/app/public ] as dev@191.166.29.176
+ DEBUG [fc351c74] Command: [ -d /var/www/login/releases/20171220085407/storage/app/public ]
+ DEBUG [fc351c74] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [cc3ad4ae] Running [ -d /var/www/login/releases/20171220085407/storage/framework ] as dev@191.166.29.176
+ DEBUG [cc3ad4ae] Command: [ -d /var/www/login/releases/20171220085407/storage/framework ]
+ DEBUG [cc3ad4ae] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [127cf14e] Running [ -d /var/www/login/shared/storage/framework/cache ] as dev@191.166.29.176
+ DEBUG [127cf14e] Command: [ -d /var/www/login/shared/storage/framework/cache ]
+ DEBUG [127cf14e] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [c3dffecb] Running [ -d /var/www/login/shared/storage/framework/sessions ] as dev@191.166.29.176
+ DEBUG [c3dffecb] Command: [ -d /var/www/login/shared/storage/framework/sessions ]
+ DEBUG [c3dffecb] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [5a338c05] Running [ -d /var/www/login/shared/storage/framework/views ] as dev@191.166.29.176
+ DEBUG [5a338c05] Command: [ -d /var/www/login/shared/storage/framework/views ]
+ DEBUG [5a338c05] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [3d725d71] Running [ -d /var/www/login/shared/storage/logs ] as dev@191.166.29.176
+ DEBUG [3d725d71] Command: [ -d /var/www/login/shared/storage/logs ]
+ DEBUG [3d725d71] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [eff8e4d0] Running /usr/bin/env setfacl -Rn -m u:www-data:rwX -m u:dev:rwX /var/www/login/releases/20171220085407/bootstrap/cache /var/www/login/releases/20171220085407/storage /var/www/login/shared/storage/app /var/www/login/releases/20171220085407/storage/app/public /var/www/login/releases/20171220085407/storage/framework /var/www/login/shared/storage/framework/cache /var/www/login/shared/storage/framework/sessions /var/www/login/shared/storage/framework/views /var/www/login/shared/storage/logs as dev@191.166.29.176
+ DEBUG [eff8e4d0] Command: /usr/bin/env setfacl -Rn -m u:www-data:rwX -m u:dev:rwX /var/www/login/releases/20171220085407/bootstrap/cache /var/www/login/releases/20171220085407/storage /var/www/login/shared/storage/app /var/www/login/releases/20171220085407/storage/app/public /var/www/login/releases/20171220085407/storage/framework /var/www/login/shared/storage/framework/cache /var/www/login/shared/storage/framework/sessions /var/www/login/shared/storage/framework/views /var/www/login/shared/storage/logs
+  INFO [eff8e4d0] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [477a09a5] Running /usr/bin/env setfacl -dRn -m u:www-data:rwX -m u:dev:rwX /var/www/login/releases/20171220085407/bootstrap/cache /var/www/login/releases/20171220085407/storage /var/www/login/shared/storage/app /var/www/login/releases/20171220085407/storage/app/public /var/www/login/releases/20171220085407/storage/framework /var/www/login/shared/storage/framework/cache /var/www/login/shared/storage/framework/sessions /var/www/login/shared/storage/framework/views /var/www/login/shared/storage/logs as dev@191.166.29.176
+ DEBUG [477a09a5] Command: /usr/bin/env setfacl -dRn -m u:www-data:rwX -m u:dev:rwX /var/www/login/releases/20171220085407/bootstrap/cache /var/www/login/releases/20171220085407/storage /var/www/login/shared/storage/app /var/www/login/releases/20171220085407/storage/app/public /var/www/login/releases/20171220085407/storage/framework /var/www/login/shared/storage/framework/cache /var/www/login/shared/storage/framework/sessions /var/www/login/shared/storage/framework/views /var/www/login/shared/storage/logs
+  INFO [477a09a5] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [2583cebc] Running /usr/bin/env ln -s /var/www/login/releases/20171220085407 /var/www/login/releases/current as dev@191.166.29.176
+ DEBUG [2583cebc] Command: /usr/bin/env ln -s /var/www/login/releases/20171220085407 /var/www/login/releases/current
+  INFO [2583cebc] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [fe46d2bd] Running /usr/bin/env mv /var/www/login/releases/current /var/www/login as dev@191.166.29.176
+ DEBUG [fe46d2bd] Command: /usr/bin/env mv /var/www/login/releases/current /var/www/login
+  INFO [fe46d2bd] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [8dc68a9e] Running /usr/bin/env ls -x /var/www/login/releases as dev@191.166.29.176
+ DEBUG [8dc68a9e] Command: /usr/bin/env ls -x /var/www/login/releases
+ DEBUG [8dc68a9e] 	20171220083619	20171220085407
+ DEBUG [8dc68a9e] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [6f8263f9] Running if test ! -d /var/www/login/releases; then echo "Directory does not exist '/var/www/login/releases'" 1>&2; false; fi as dev@191.166.29.176
+ DEBUG [6f8263f9] Command: if test ! -d /var/www/login/releases; then echo "Directory does not exist '/var/www/login/releases'" 1>&2; false; fi
+ DEBUG [6f8263f9] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [9a4c7705] Running /usr/bin/env echo "Branch master (at 6a2085dbf85cdcc57ee55070d91687738405de6b) deployed as release 20171220085407 by MokgosiL" >> /var/www/login/revisions.log as dev@191.166.29.176
+ DEBUG [9a4c7705] Command: cd /var/www/login/releases && /usr/bin/env echo "Branch master (at 6a2085dbf85cdcc57ee55070d91687738405de6b) deployed as release 20171220085407 by MokgosiL" >> /var/www/login/revisions.log
+  INFO [9a4c7705] Finished in 0.098 seconds with exit status 0 (successful).
